@@ -112,6 +112,12 @@ input {
     border-color: var(--input-error-color);
 }
 
+.form-input-container .error {
+    color: var(--input-error-color);
+    font-size: 0.5rem;
+    height: 0.8rem;
+}
+
 
 button {
     background-color: var(--main-color);
