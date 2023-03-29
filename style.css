@@ -104,17 +104,19 @@ input {
     border: 2px solid var(--main-color);
 }
 
-.form-input-container .success input {
-    border-color: var(--input-success-color);
+.form-input-container.success input {
+    outline: none;
+    border: 2px solid var(--input-success-color);
 }
 
-.form-input-container .error input {
-    border-color: var(--input-error-color);
+.form-input-container.error input {
+    outline: none;
+    border: 2px solid var(--input-error-color);
 }
 
-.form-input-container .error {
+.form-input-container > .error {
     color: var(--input-error-color);
-    font-size: 0.5rem;
+    font-size: 1.2rem;
     height: 0.8rem;
 }
 
