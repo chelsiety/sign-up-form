@@ -1,15 +1,3 @@
-/* 
-font-family: 'Merriweather', Baskerville, Georgia, Garamond, serif; 
-font-family: 'Lato', Helvetica, Verdana, Tahoma, sans-serif;
-
-
-rem font size
-rem other things
-
-em buttons
-
-*/
-
 :root {
     --main-color: hsl(250, 79%, 68%);
     --main-color-darker: hsl(250, 48%, 47%);
@@ -31,8 +19,6 @@ h1, h2 {
 
 h1 {
     margin: 0.3em 0;
-    /* top right/left bottom */
-    /* top right bottom left */
 }
 body {
     font-family: var(--body-font-family);
@@ -44,7 +30,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-left: 2.5em;
-    /* padding: 30px; */
     gap: 10rem;
 }
 
@@ -70,7 +55,6 @@ img[src="images/girl-read-side-doodle.svg"] {
     flex-direction: column;
     justify-content: space-evenly;
     align-items:flex-start;
- 
 }
 
 .form {
@@ -84,7 +68,6 @@ img[src="images/girl-read-side-doodle.svg"] {
     gap: 2.5rem;
     padding-bottom: 40px;
     width: 80%;
-  
 }
 
 .form-input-container {
@@ -99,6 +82,7 @@ input {
     width: 350px;
     font-size: 1.5rem;
 }
+
 .form-input-container input:focus {
     outline: none;
     border: 2px solid var(--main-color);
@@ -119,7 +103,6 @@ input {
     font-size: 1.2rem;
     height: 0.8rem;
 }
-
 
 button {
     background-color: var(--main-color);
@@ -144,4 +127,88 @@ a:link {
 
 a:hover{
     text-decoration: underline;
+}
+
+
+
+
+/*Desktop-first MEDIA QUERIES */
+/* All rules outside of @media queries apply to devices 1301px and above */
+
+
+/*  Extra large devices (Laptops/desktops): Rules here apply to devices from 993px to 1300px (inclusive) */
+@media screen and (max-width: 1300px) {
+    .title {
+        font-size: 3.5rem;
+    }
+    body {
+        font-size: 1.4rem;
+    }
+    .main {
+        gap: 5rem;
+    }
+    img[src="images/girl-read-side-doodle.svg"] {
+        width: 30rem;
+        height: auto;
+    }
+    input {
+        height: 30px;
+        width: 280px;
+        font-size: 1.1rem;
+    }
+    .form-fields-container {
+        gap: 1.5rem;
+    }
+    button {
+        font-size: 1.2em;
+    }
+}
+
+/* Large devices (Laptops/desktops): Rules here apply to devices from 769px to 992px (inclusive)*/
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+    .main {
+        gap: 2.5rem;
+    }
+    img[src="images/girl-read-side-doodle.svg"] {
+        width: 20rem;
+        height: auto;
+    }
+    input {
+        height: 30px;
+        width: 250px;
+        font-size: 1rem;
+    }
+    .form-input-container>.error {
+        color: var(--input-error-color);
+        font-size: 0.9rem;
+        height: 0.4rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Small to medium devices: Rules here apply to devices from 0px to 768px (inclusive)*/
+/* For devices 768px and below */
+@media screen and (max-width: 768px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2.5em;
+        gap: 1rem;
+    }
+    
+    img[src="images/girl-read-side-doodle.svg"] {
+        width: 25rem;
+        height: auto;
+    }
 }

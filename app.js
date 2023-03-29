@@ -20,7 +20,7 @@ function isValidEmail(emailEntered) {
 }
 
 function isValidPhoneNumber(phoneNumberEntered) {
-    const re = /^(?:\d{2}([-.])\d{3}\1\d{3}\1\d{3}|\d{11})$/gm;
+    const re = /^(?:\d{2}([-.])\d{3}\1\d{3}\1\d{3}|\d{11})$/gm; // RegEx for an 11-digit phone number
     return re.test(phoneNumberEntered);
 }
 
